@@ -104,8 +104,8 @@ VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'StreamfFlix_Support')
 
 # Shortlink Info
 SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'modijiurl.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', '45213a32bd861ba910a0874a28b709e542095704')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'googlyurl.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', '6256ef7f97afaa1b3878d7ef293827df71321c9b')
 
 # Others
 MAX_B_TN = environ.get("MAX_B_TN", "5")
