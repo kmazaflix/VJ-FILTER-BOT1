@@ -30,25 +30,25 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/How_To_Open_Linkl")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
 
 # Admins, Channels & Users
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001912362438'))
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5023341854').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002112628668').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '5023341854').split()]
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001660808506'))
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6460270330').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002241426032').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '6460270330').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # auth_channel means force subscribe channel.
 # if REQUEST_TO_JOIN_MODE is true then force subscribe work like request to join fsub, else if false then work like normal fsub.
 REQUEST_TO_JOIN_MODE = bool(environ.get('REQUEST_TO_JOIN_MODE', False)) # Set True Or False
-auth_channel = environ.get('AUTH_CHANNEL', '-1002152223496') # give your force subscribe channel id here else leave it blank
+auth_channel = environ.get('AUTH_CHANNEL', '-1002241426032') # give your force subscribe channel id here else leave it blank
 auth_grp = environ.get('AUTH_GROUP', '-1001916019297') # give your force subscribe group id here else leave it blank
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002178222958')
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-1001912362438')
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002241426032')
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1001660808506')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1001912362438')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1001660808506')).split()]
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
 # MongoDB information
@@ -68,8 +68,8 @@ OWNER_USERNAME = environ.get('OWNER_USERNAME', 'piyuyt') # owner username withou
 
 # Links
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/StreamFlix_Support')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/StreamFlix_Update')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/StreamFlix_Update')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/StreamFlix_Updates')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/StreamFlix_Updates')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'StreamfFlix_Support') # Support Chat Link Without https:// or @
 
 # True Or False
