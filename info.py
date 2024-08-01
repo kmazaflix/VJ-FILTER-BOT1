@@ -20,7 +20,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'TechVJBot')
 API_ID = int(environ.get('API_ID', '28689990'))
 API_HASH = environ.get('API_HASH', '881c85404f9714ee290def1d3e1351ce')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7041688857:AAHKiZJDkufxfXby4oOmgFc8Sef_tC03p58")
+BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
@@ -104,8 +104,8 @@ VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'StreamfFlix_Support')
 
 # Shortlink Info
 SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'googlyurl.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', '6256ef7f97afaa1b3878d7ef293827df71321c9b')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'runurl.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', '75a2a88bf0b37bb69a76b755a6d4b96f67049dd3')
 
 # Others
 MAX_B_TN = environ.get("MAX_B_TN", "5")
